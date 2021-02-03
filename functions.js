@@ -1,14 +1,14 @@
 /**
  * greet(name):
  * - receives a name
- * - logs "Hello <name>"
+ * - log "Hello <name>"
  *
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
 function greet(name) {
   // Your code here
-  console.log("hello " + name)
+  console.log( "hello " +name);
 }
 greet("Hamza");
 
@@ -26,10 +26,10 @@ function isOdd(n) {
   
   if ( n%2!==0){
 
-  console.log("true");
+  return (true);
   }
   else {
-    console.log("false");
+    return(false);
   }
   isOdd(7);
   isOdd(10);
@@ -49,11 +49,7 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
-  if( (n%2!==0))
-  {
-  
-    console.log(n=n-2);
-  }
+  if( n%2!==0) return(n-2);
 
   // console.log( (n%2==!0) )
 oddsSmallerThan(7);
@@ -73,10 +69,10 @@ oddsSmallerThan(15);
 function squareOrDouble(n) {
   // Your code here
   if (n%2==0){
-    console.log(n=n*2);
+    return(n=n*2);
   }
   else {
-    console.log(n=n*n);
+    return(n=n*n);
   }
 }
 
